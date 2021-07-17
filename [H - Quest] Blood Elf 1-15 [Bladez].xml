@@ -26,6 +26,7 @@
     <AvoidMobs>
         <!--<Mob Name="Training Dummy" Id="44794"/>Blood Elf Training Dummy-->
 		<Mob Name="Knucklerot" Entry="16246" />
+		<Mob Name="Knucklerot" Entry="16245" />
     </AvoidMobs>
 
 
@@ -456,6 +457,7 @@
 			<TurnIn QuestName="The Plagued Coast" QuestId="9149" TurnInName="" TurnInId="16198" />
 
 		<PickUp QuestName="Underlight Ore Samples" QuestId="9207" GiverName="Apprentice Shatharia" GiverId="16293" />
+			<Objective QuestName="Underlight Ore Samples" QuestId="9207" Type="CollectItem" ItemId="22634" CollectCount="6" />
 			<Objective QuestName="Trouble at the Underlight Mines" QuestId="9192" Type="KillMob" MobId="16334" KillCount="8" />
 			<Objective QuestName="Trouble at the Underlight Mines" QuestId="9192" Type="KillMob" MobId="16335" KillCount="6" />
 			<Objective QuestName="Trouble at the Underlight Mines" QuestId="9192" Type="KillMob" MobId="16337" KillCount="4" />
