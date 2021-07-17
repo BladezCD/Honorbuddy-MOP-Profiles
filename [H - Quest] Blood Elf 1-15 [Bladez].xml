@@ -431,9 +431,9 @@
 <!--		<TurnIn QuestName="Spirits of the Drowned" QuestId="9274" TurnInName="Ranger Krenn'an" TurnInId="16462" />-->
 <!--	<PickUp QuestName="Culinary Crunch" QuestId="9171" GiverName="Master Chef Mouldier" GiverId="16253" />-->
 
-		<PickUp QuestName="Troll Juju" QuestId="9199" GiverName="" GiverId="9199" />
+		<PickUp QuestName="Troll Juju" QuestId="9199" GiverName="" GiverId="16251" />
 		<Objective QuestName="Troll Juju" QuestId="9199" Type="CollectItem" ItemId="22633" CollectCount="8" />
-		<TurnIn QuestName="Troll Juju" QuestId="9199" TurnInName="" TurnInId="9199" />
+		<TurnIn QuestName="Troll Juju" QuestId="9199" TurnInName="" TurnInId="16251" />
 
 
 
