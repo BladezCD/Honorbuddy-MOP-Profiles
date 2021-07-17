@@ -897,6 +897,9 @@
     <Item Name="Heavy Stone" Entry="2838" />
     <Item Name="Solid Stone" Entry="7912" />
     <Item Name="Dense Stone" Entry="12365" />
+	<Item Name="Small Blue Pouch" Entry="828" />
+	<Item Name="Small Red Pouch" Entry="805" />
+	<Item Name="Small Black Pouch" Entry="5571" />
   </ForceMail>
 
 </HBProfile>
