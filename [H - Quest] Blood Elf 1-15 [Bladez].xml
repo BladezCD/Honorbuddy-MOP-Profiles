@@ -625,7 +625,7 @@
 			<PickUp QuestName="Retaking Windrunner Spire" QuestId="9173" GiverName="" GiverId="16252" />
 			<Objective QuestName="Retaking Windrunner Spire" QuestId="9173" Type="KillMob" MobId="16315" KillCount="8" />
 			<Objective QuestName="Retaking Windrunner Spire" QuestId="9173" Type="KillMob" MobId="16314" KillCount="10" />
-			d<TurnIn QuestName="Retaking Windrunner Spire" QuestId="9173" TurnInName="" TurnInId="0" />
+			d<TurnIn QuestName="Retaking Windrunner Spire" QuestId="9173" TurnInName="" TurnInId="16252" />
 			
 			
 	<!--	<PickUp QuestName="Report to Captain Helios" QuestId="9146" GiverName="Ranger Valanna" GiverId="16219" />-->
