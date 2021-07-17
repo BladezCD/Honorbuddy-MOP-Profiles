@@ -697,13 +697,13 @@
 		<TurnIn QuestName="Windrunner Village" QuestId="9140" TurnInName="Arcanist Vandril" TurnInId="16197" />
 		<PickUp QuestName="Deliver the Plans to An'telas" QuestId="9166" GiverName="Darne Auriferous" GiverId="16231" />
 		<PickUp QuestName="Troll Juju" QuestId="9199" GiverName="Deathstalker Maltendis" GiverId="16251" />
-		<PickUp QuestName="Investigate the Amani Catacombs" QuestId="9193" GiverName="Advisor Valwyn" GiverId="16289" />
+
+		
 		<PickUp QuestName="The Farstrider Enclave" QuestId="9282" GiverName="Magister Kaendris" GiverId="16239" />
-		<TurnIn QuestName="Underlight Ore Samples" QuestId="9207" TurnInName="Magister Quallestis" TurnInId="16291" />
-		<TurnIn QuestName="The Sanctum of the Sun" QuestId="9151" TurnInName="Magister Idonis" TurnInId="16204" />
+
 		<TurnIn QuestName="Deliver the Plans to An'telas" QuestId="9166" TurnInName="Magister Sylastor" TurnInId="16237" />
 		<PickUp QuestName="Deactivate An'owyn" QuestId="9169" GiverName="Magister Sylastor" GiverId="16237" />
-		<TurnIn QuestName="Curbing the Plague" QuestId="9159" TurnInName="Farstrider Sedina" TurnInId="16202" />
+		
 		<PickUp QuestName="Attack on Zeb'Tela" QuestId="9276" GiverName="Farstrider Solanna" GiverId="16463" />
 		<PickUp QuestName="Shadowpine Weaponry" QuestId="9214" GiverName="Capatin Helios" GiverId="16220" />
 		<PickUp QuestName="A Little Dash of Seasoning" QuestId="9275" GiverName="Apothecary Venustus" GiverId="16464" />
