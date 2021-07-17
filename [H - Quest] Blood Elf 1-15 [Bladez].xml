@@ -625,9 +625,9 @@
 			<PickUp QuestName="Retaking Windrunner Spire" QuestId="9173" GiverName="" GiverId="16252" />
 			<Objective QuestName="Retaking Windrunner Spire" QuestId="9173" Type="KillMob" MobId="16315" KillCount="8" />
 			<Objective QuestName="Retaking Windrunner Spire" QuestId="9173" Type="KillMob" MobId="16314" KillCount="10" />
-			d<TurnIn QuestName="Retaking Windrunner Spire" QuestId="9173" TurnInName="" TurnInId="16252" />
+			<TurnIn QuestName="Retaking Windrunner Spire" QuestId="9173" TurnInName="" TurnInId="16252" />
 			
-			
+
 	<!--	<PickUp QuestName="Report to Captain Helios" QuestId="9146" GiverName="Ranger Valanna" GiverId="16219" />-->
 		<!--	<Objective QuestName="Forgotten Rituals" QuestId="9157" Type="CollectItem" ItemId="22674" CollectCount="8" />-->
 		<!--<TurnIn QuestName="Forgotten Rituals" QuestId="9157" TurnInName="Geranis Whitemorn" TurnInId="16201" />-->
@@ -656,21 +656,26 @@
 			<!-- Curbing the Plague - has issues -->
 
 			<TurnIn QuestName="Goldenmist Village" QuestId="9139" TurnInName="" TurnInId="16197" />
-			<!--<TurnIn QuestName="Investigate An'daroth" QuestId="9160" TurnInName="" TurnInId="16231" />-->
-			<TurnIn QuestName="The Plagued Coast" QuestId="9149" TurnInName="" TurnInId="16198" />
-
+			<PickUp QuestName="Investigate An'daroth" QuestId="9160" GiverName="Dame Auriferous" GiverId="16231" />
+			<Objective QuestName="Investigate An'daroth" QuestId="9160" Type="KillMob" MobId="16330" KillCount="12" />
+			<!-- Investigate An'daroth -->
+			<If Condition="((HasQuest(9160)) &amp;&amp; (!IsQuestCompleted(9160)))" >
+				<RunTo X="7916.569" Y="-6509.529" Z="46.92893" />
+			</If>
+			
+			
+			<TurnIn QuestName="Investigate An'daroth" QuestId="9160" TurnInName="" TurnInId="16231" />
+			<Objective QuestName="Into Occupied Territory" QuestId="9163" Type="CollectItem" ItemId="22590" CollectCount="1" />
+			<Objective QuestName="Into Occupied Territory" QuestId="9163" Type="CollectItem" ItemId="22591" CollectCount="1" />
+			<Objective QuestName="Into Occupied Territory" QuestId="9163" Type="CollectItem" ItemId="22592" CollectCount="1" />
 
 			
 
 		<PickUp QuestName="Rotting Hearts" QuestId="9216" GiverName="Magistrix Aminel" GiverId="16205" />
-		<TurnIn QuestName="Tomber's Supplies" QuestId="9152" TurnInName="Rathis Tomber" TurnInId="16224" />
 		<TurnIn QuestName="Goldenmist Village" QuestId="9139" TurnInName="Arcanist Vandril" TurnInId="16197" />
 		<PickUp QuestName="Windrunner Village" QuestId="9140" GiverName="Arcanist Vandril" GiverId="16197" />
 
 		<PickUp QuestName="Into Occupied Territory" QuestId="9163" GiverName="Dame Auriferous" GiverId="16231" />
-		<TurnIn QuestName="Trouble at the Underlight Mines" QuestId="9192" TurnInName="Deathstalker Maltendis" TurnInId="16251" />
-		<PickUp QuestName="Retaking Windrunner Spire" QuestId="9173" GiverName="High Executor Mavren" GiverId="16252" />
-		<TurnIn QuestName="Down the Dead Scar" QuestId="9155" TurnInName="Deathstalker Rathiel" TurnInId="16200" />
 		<TurnIn QuestName="The Plagued Coast" QuestId="9149" TurnInName="Apothecary Renzithen" TurnInId="16198" />
 			<Objective QuestName="Into Occupied Territory" QuestId="9163" Type="CollectItem" ItemId="22590" CollectCount="1" />
 			<Objective QuestName="Into Occupied Territory" QuestId="9163" Type="CollectItem" ItemId="22591" CollectCount="1" />
@@ -682,16 +687,13 @@
 		
 		
 		
-				<If Condition="(HasItem(22597))" >
-			<PickUp QuestName="The Lady's Necklace" QuestId="9175" GiverName="The Lady's Necklace" GiverId="22597" GiverType="Item" />
-		</If>
+	<!--	<If Condition="(HasItem(22597))" >-->
+	<!--		<PickUp QuestName="The Lady's Necklace" QuestId="9175" GiverName="The Lady's Necklace" GiverId="22597" GiverType="Item" />-->
+	<!--	</If>-->
 		<PickUp QuestName="The Sanctum of the Sun" QuestId="9151" GiverName="Magister Darenis" GiverId="16199" />
 		<TurnIn QuestName="Retaking Windrunner Spire" QuestId="9173" TurnInName="High Executor Mavren" TurnInId="16252" />
 		<TurnIn QuestName="Into Occupied Territory" QuestId="9163" TurnInName="Dame Auriferous" TurnInId="16231" />
-		<TurnIn QuestName="The Lady's Necklace" QuestId="9175" TurnInName="High Executor Mavren" TurnInId="16252" />
-		<If Condition="Me.Race == WoWRace.BloodElf" >
-			<PickUp QuestName="Journey to Undercity" QuestId="9180" GiverName="High Executor Mavren" GiverId="16252" />
-		</If>	
+
 		<TurnIn QuestName="Windrunner Village" QuestId="9140" TurnInName="Arcanist Vandril" TurnInId="16197" />
 		<PickUp QuestName="Deliver the Plans to An'telas" QuestId="9166" GiverName="Darne Auriferous" GiverId="16231" />
 		<PickUp QuestName="Troll Juju" QuestId="9199" GiverName="Deathstalker Maltendis" GiverId="16251" />
