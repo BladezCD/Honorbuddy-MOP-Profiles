@@ -437,20 +437,12 @@
 
 
 
-
-		<PickUp QuestName="Salvaging the Past" QuestId="9150" GiverName="Magister Darenis" GiverId="16199" />
-		<PickUp QuestName="Down the Dead Scar" QuestId="9155" GiverName="Deathstalker Rathiel" GiverId="16200" />
-<!--		<PickUp QuestName="Investigate An'daroth" QuestId="9160" GiverName="Dame Auriferous" GiverId="16231" />-->
-<!--		<PickUp QuestName="Trouble at the Underlight Mines" QuestId="9192" GiverName="Deathstalker Maltendis" GiverId="16251" />-->
-		<!--<TurnIn QuestName="Suncrown Village" QuestId="9138" TurnInName="Arcanist Vandril" TurnInId="16197" />-->
-		
-		
 		<PickUp QuestName="Goldenmist Village" QuestId="9139" GiverName="Arcanist Vandril" GiverId="16197" />
-		<TurnIn QuestName="Anok'suten" QuestId="9315" TurnInName="" TurnInId="16197" />
+
 
 			<!-- Tomber's Supplies -->
 			<!--<CustomBehavior File="UseGameObject" QuestId="9152" ObjectId="181133" NumOfTimes="1" X="7683.342" Y="-6391.251" Z="20.56107" />-->
-			<Objective QuestName="Investigate An'daroth" QuestId="9160" Type="KillMob" MobId="16330" KillCount="12" />
+		<!--	<Objective QuestName="Investigate An'daroth" QuestId="9160" Type="KillMob" MobId="16330" KillCount="12" />-->
 		<!--	 Investigate An'daroth -->
 			<!--	 <If Condition="((HasQuest(9160)) &amp;&amp; (!IsQuestCompleted(9160)))" >-->
 			<!--		<RunTo X="7916.569" Y="-6509.529" Z="46.92893" />-->
@@ -570,7 +562,6 @@
 		<TurnIn QuestName="Clearing the Way" QuestId="9281" TurnInName="Apprentice Vor'el" TurnInId="16480" />
 			<Objective QuestName="The Twin Ziggurats" QuestId="9176" Type="CollectItem" ItemId="22599" CollectCount="1" />
 			<Objective QuestName="The Twin Ziggurats" QuestId="9176" Type="CollectItem" ItemId="22598" CollectCount="1" />
-			<Objective QuestName="Spinal Dust" QuestId="9218" Type="CollectItem" ItemId="22642" CollectCount="10" />	
 			<Objective QuestName="Rotting Hearts" QuestId="9216" Type="CollectItem" ItemId="22641" CollectCount="10" />
 			<Objective QuestName="War on Deatholme" QuestId="9220" Type="KillMob" MobId="16320" KillCount="5" />
 			<Objective QuestName="War on Deatholme" QuestId="9220" Type="KillMob" MobId="16319" KillCount="6" />
