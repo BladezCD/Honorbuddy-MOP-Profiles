@@ -429,10 +429,18 @@
 	<!--<	<PickUp QuestName="Curbing the Plague" QuestId="9159" GiverName="Farstrider Sedina" GiverId="16202" />-->
 <!--		<TurnIn QuestName="Report to Captain Helios" QuestId="9146" TurnInName="Captain Helios" TurnInId="16220" />-->
 <!--		<TurnIn QuestName="Spirits of the Drowned" QuestId="9274" TurnInName="Ranger Krenn'an" TurnInId="16462" />-->
-	<PickUp QuestName="Culinary Crunch" QuestId="9171" GiverName="Master Chef Mouldier" GiverId="16253" />
+<!--	<PickUp QuestName="Culinary Crunch" QuestId="9171" GiverName="Master Chef Mouldier" GiverId="16253" />-->
+
+		<PickUp QuestName="Troll Juju" QuestId="9199" GiverName="" GiverId="9199" />
+		<Objective QuestName="Troll Juju" QuestId="9199" Type="CollectItem" ItemId="22633" CollectCount="8" />
+		<TurnIn QuestName="Troll Juju" QuestId="9199" TurnInName="" TurnInId="9199" />
+
+
+
+
 		<PickUp QuestName="Salvaging the Past" QuestId="9150" GiverName="Magister Darenis" GiverId="16199" />
 		<PickUp QuestName="Down the Dead Scar" QuestId="9155" GiverName="Deathstalker Rathiel" GiverId="16200" />
-		<PickUp QuestName="Investigate An'daroth" QuestId="9160" GiverName="Dame Auriferous" GiverId="16231" />
+<!--		<PickUp QuestName="Investigate An'daroth" QuestId="9160" GiverName="Dame Auriferous" GiverId="16231" />-->
 <!--		<PickUp QuestName="Trouble at the Underlight Mines" QuestId="9192" GiverName="Deathstalker Maltendis" GiverId="16251" />-->
 		<!--<TurnIn QuestName="Suncrown Village" QuestId="9138" TurnInName="Arcanist Vandril" TurnInId="16197" />-->
 		
@@ -442,11 +450,11 @@
 
 			<!-- Tomber's Supplies -->
 			<!--<CustomBehavior File="UseGameObject" QuestId="9152" ObjectId="181133" NumOfTimes="1" X="7683.342" Y="-6391.251" Z="20.56107" />-->
-			<!--<Objective QuestName="Investigate An'daroth" QuestId="9160" Type="KillMob" MobId="16330" KillCount="12" />-->
-			<!-- Investigate An'daroth -->
-				<!-- <If Condition="((HasQuest(9160)) &amp;&amp; (!IsQuestCompleted(9160)))" >-->
-				<!-- 	<RunTo X="7916.569" Y="-6509.529" Z="46.92893" />-->
-				<!-- </If>-->
+			<Objective QuestName="Investigate An'daroth" QuestId="9160" Type="KillMob" MobId="16330" KillCount="12" />
+		<!--	 Investigate An'daroth -->
+			<!--	 <If Condition="((HasQuest(9160)) &amp;&amp; (!IsQuestCompleted(9160)))" >-->
+			<!--		<RunTo X="7916.569" Y="-6509.529" Z="46.92893" />-->
+			<!--	 </If>-->
 			<Objective QuestName="Goldenmist Village" QuestId="9139" Type="KillMob" MobId="16325" KillCount="6" />
 			<Objective QuestName="Goldenmist Village" QuestId="9139" Type="KillMob" MobId="16326" KillCount="4" />
 			<Objective QuestName="The Plagued Coast" QuestId="9149" Type="CollectItem" ItemId="22579" CollectCount="6" />
@@ -461,8 +469,9 @@
 			<Objective QuestName="Trouble at the Underlight Mines" QuestId="9192" Type="KillMob" MobId="16334" KillCount="8" />
 			<Objective QuestName="Trouble at the Underlight Mines" QuestId="9192" Type="KillMob" MobId="16335" KillCount="6" />
 			<Objective QuestName="Trouble at the Underlight Mines" QuestId="9192" Type="KillMob" MobId="16337" KillCount="4" />
+			
 			<Objective QuestName="Underlight Ore Samples" QuestId="9207" Type="CollectItem" ItemId="22634" CollectCount="6" />
-		<TurnIn QuestName="Culinary Crunch" QuestId="9171" TurnInName="Master Chef Mouldier" TurnInId="16253" />
+<!--		<TurnIn QuestNl="Culinary Crunch" QuestId="9171" TurnInName="Apprentice Mirveda" TurnInId="15402" />-->
 
 			
 
