@@ -25,6 +25,7 @@
 
     <AvoidMobs>
         <!--<Mob Name="Training Dummy" Id="44794"/>Blood Elf Training Dummy-->
+		<Mob Name="Knucklerot" Entry="16246" />
     </AvoidMobs>
 
 
@@ -37,6 +38,8 @@
         <Mailbox Name="Fairbreeze Village" X="8721.254" Y="-6666.695" Z="70.27271"/>
         <Mailbox Name="Ruins of Silvermoon" X="9500.1" Y="-6840.219" Z="16.49203"/>
         <Mailbox Name="Sunstrider Isle" X="10353.51" Y="-6368.346" Z="35.71226"/>
+		<Mailbox Name="" X="7577.94" Y="-6858.045" Z="93.34518" />
+		
     </Mailboxes>
 
 
@@ -67,7 +70,11 @@
 		<Vendor Name="Narina" Entry="16274" Type="Repair" X="7561.884" Y="-7663.498" Z="151.2822" />
 		
     </Vendors>
-
+	<ProtectedItems>
+		<Item Name="Crunchy Spider Leg" Entry="22644" />
+		<Item Name="Spinal Dust" Entry="22642" />
+		<Item Name="Rotting Heart" Entry="22641" />
+	</ProtectedItems>
 
     <!-- BEGIN: Quest Overrides -->
     <Quest Id="8335" Name="Felendren the Banished">
@@ -162,6 +169,39 @@
 			</Hotspots>
 		</Objective>
 		</Quest>
+		<Quest Id="8486" Name="Arcane Instability">
+	<Objective Type="KillMob" MobId="15648" KillCount="5">
+		<Hotspots>
+		</Hotspots>
+	</Objective>
+	<Objective Type="KillMob" MobId="15647" KillCount="5">
+		<Hotspots>
+		
+		</Hotspots>
+	</Objective>
+</Quest>
+<Quest Id="8346" Name="Thirst Unending">
+	<Objective Type="KillMob" MobId="15468" KillCount="1">
+		<Hotspots>
+		</Hotspots>
+	</Objective>
+</Quest>
+	<Quest Id="9139" Name="Goldenmist Village" >
+		<Objective Type="KillMob" MobId="16325" KillCount="6" >
+			<Hotspots>
+				<Hotspot X="7985.205" Y="-6095.428" Z="20.40381" />
+				<Hotspot X="7904.725" Y="-6098.651" Z="17.10433" />
+				<Hotspot X="7922.519" Y="-6265.847" Z="23.9014" />
+			</Hotspots>
+		</Objective>			
+		<Objective Type="KillMob" MobId="16326" KillCount="4" >
+			<Hotspots>
+				<Hotspot X="7985.205" Y="-6095.428" Z="20.40381" />
+				<Hotspot X="7904.725" Y="-6098.651" Z="17.10433" />
+				<Hotspot X="7922.519" Y="-6265.847" Z="23.9014" />
+			</Hotspots>
+		</Objective>	
+	</Quest>
 
     <!-- END: Quest Overrides -->
 
@@ -295,7 +335,7 @@
             <TurnIn QuestName="Innkeeper Delaniel" TurnInId="15433" QuestId="8350"
                     X="9476.913" Y="-6859.21" Z="17.34275" />
         </If>
-		<PickUp QuestName="The Wayward Apprentice" QuestId="9254" GiverName="" GiverId="16210" />
+		<!--<PickUp QuestName="The Wayward Apprentice" QuestId="9254" GiverName="" GiverId="16210" />-->
 		<!--<PickUp QuestName="Thirst Unending" QuestId="8346" GiverName="" GiverId="0" />-->
 		<PickUp QuestName="Saltheril's Haven" QuestId="9395" GiverName="" GiverId="16210" />
 		<PickUp QuestName="Ranger Sareyn" QuestId="9358" GiverName="" GiverId="15397" />
@@ -373,69 +413,186 @@
 			<Objective QuestName="Suncrown Village" QuestId="9138" Type="KillMob" MobId="16313" KillCount="10" />
 			<Objective QuestName="Anok'suten" QuestId="9315" Type="KillMob" MobId="16357" KillCount="1" />
 <!--		<PickUp QuestName="Dealing with Zeb'Sora" QuestId="9143" GiverName="Ranger Valanna" GiverId="16219" />-->
-		<PickUp QuestName="Forgotten Rituals" QuestId="9157" GiverName="Geranis Whitemorn" GiverId="16201" />
-		<PickUp QuestName="Bearers of the Plague" QuestId="9158" GiverName="Farstrider Sedina" GiverId="16202" />
+<!--		<PickUp QuestName="Forgotten Rituals" QuestId="9157" GiverName="Geranis Whitemorn" GiverId="16201" />-->
+<!--		<PickUp QuestName="Bearers of the Plague" QuestId="9158" GiverName="Farstrider Sedina" GiverId="16202" />
 		<PickUp QuestName="Spirits of the Drowned" QuestId="9274" GiverName="Ranger Krenn'an" GiverId="16462" />>-->
 	<!--		<Objective QuestName="Dealing with Zeb'Sora" QuestId="9143" Type="CollectItem" ItemId="22639" CollectCount="6" />>-->
 	<!--	<TurnIn QuestName="Dealing with Zeb'Sora" QuestId="9143" TurnInName="Ranger Valanna" TurnInId="16219" />-->
 	<!--	<PickUp QuestName="Report to Captain Helios" QuestId="9146" GiverName="Ranger Valanna" GiverId="16219" />-->
-			<Objective QuestName="Forgotten Rituals" QuestId="9157" Type="CollectItem" ItemId="22674" CollectCount="8" />
-		<TurnIn QuestName="Forgotten Rituals" QuestId="9157" TurnInName="Geranis Whitemorn" TurnInId="16201" />
-			<Objective QuestName="Spirits of the Drowned" QuestId="9274" Type="KillMob" MobId="16327" KillCount="8" />
-			<Objective QuestName="Spirits of the Drowned" QuestId="9274" Type="KillMob" MobId="16328" KillCount="8" />
-			<Objective QuestName="Bearers of the Plague" QuestId="9158" Type="KillMob" MobId="16348" KillCount="10" />
-		<TurnIn QuestName="Bearers of the Plague" QuestId="9158" TurnInName="Farstrider Sedina" TurnInId="16202" />
-		<PickUp QuestName="Curbing the Plague" QuestId="9159" GiverName="Farstrider Sedina" GiverId="16202" />
+		<!--	<Objective QuestName="Forgotten Rituals" QuestId="9157" Type="CollectItem" ItemId="22674" CollectCount="8" />-->
+		<!--<TurnIn QuestName="Forgotten Rituals" QuestId="9157" TurnInName="Geranis Whitemorn" TurnInId="16201" />-->
+		<!--<	<Objective QuestName="Spirits of the Drowned" QuestId="9274" Type="KillMob" MobId="16327" KillCount="8" />-->
+		<!--<	<Objective QuestName="Spirits of the Drowned" QuestId="9274" Type="KillMob" MobId="16328" KillCount="8" />-->
+		<!--<	<Objective QuestName="Bearers of the Plague" QuestId="9158" Type="KillMob" MobId="16348" KillCount="10" />-->
+	<!--<	<TurnIn QuestName="Bearers of the Plague" QuestId="9158" TurnInName="Farstrider Sedina" TurnInId="16202" />-->
+	<!--<	<PickUp QuestName="Curbing the Plague" QuestId="9159" GiverName="Farstrider Sedina" GiverId="16202" />-->
 <!--		<TurnIn QuestName="Report to Captain Helios" QuestId="9146" TurnInName="Captain Helios" TurnInId="16220" />-->
-		<TurnIn QuestName="Spirits of the Drowned" QuestId="9274" TurnInName="Ranger Krenn'an" TurnInId="16462" />
-<!--		<PickUp QuestName="Culinary Crunch" QuestId="9171" GiverName="Master Chef Mouldier" GiverId="16253" />-->
-<!--		<PickUp QuestName="Salvaging the Past" QuestId="9150" GiverName="Magister Darenis" GiverId="16199" />-->
-<!--		<PickUp QuestName="Down the Dead Scar" QuestId="9155" GiverName="Deathstalker Rathiel" GiverId="16200" />-->
+<!--		<TurnIn QuestName="Spirits of the Drowned" QuestId="9274" TurnInName="Ranger Krenn'an" TurnInId="16462" />-->
+	<PickUp QuestName="Culinary Crunch" QuestId="9171" GiverName="Master Chef Mouldier" GiverId="16253" />
+		<PickUp QuestName="Salvaging the Past" QuestId="9150" GiverName="Magister Darenis" GiverId="16199" />
+		<PickUp QuestName="Down the Dead Scar" QuestId="9155" GiverName="Deathstalker Rathiel" GiverId="16200" />
 		<PickUp QuestName="Investigate An'daroth" QuestId="9160" GiverName="Dame Auriferous" GiverId="16231" />
 <!--		<PickUp QuestName="Trouble at the Underlight Mines" QuestId="9192" GiverName="Deathstalker Maltendis" GiverId="16251" />-->
-		<TurnIn QuestName="Suncrown Village" QuestId="9138" TurnInName="Arcanist Vandril" TurnInId="16197" />
+		<!--<TurnIn QuestName="Suncrown Village" QuestId="9138" TurnInName="Arcanist Vandril" TurnInId="16197" />-->
 		
 		
 		<PickUp QuestName="Goldenmist Village" QuestId="9139" GiverName="Arcanist Vandril" GiverId="16197" />
-
+		<TurnIn QuestName="Anok'suten" QuestId="9315" TurnInName="" TurnInId="16197" />
 
 			<!-- Tomber's Supplies -->
 			<!--<CustomBehavior File="UseGameObject" QuestId="9152" ObjectId="181133" NumOfTimes="1" X="7683.342" Y="-6391.251" Z="20.56107" />-->
 			<!--<Objective QuestName="Investigate An'daroth" QuestId="9160" Type="KillMob" MobId="16330" KillCount="12" />-->
 			<!-- Investigate An'daroth -->
-			<If Condition="((HasQuest(9160)) &amp;&amp; (!IsQuestCompleted(9160)))" >
-				<RunTo X="7916.569" Y="-6509.529" Z="46.92893" />
-			</If>
+				<!-- <If Condition="((HasQuest(9160)) &amp;&amp; (!IsQuestCompleted(9160)))" >-->
+				<!-- 	<RunTo X="7916.569" Y="-6509.529" Z="46.92893" />-->
+				<!-- </If>-->
 			<Objective QuestName="Goldenmist Village" QuestId="9139" Type="KillMob" MobId="16325" KillCount="6" />
 			<Objective QuestName="Goldenmist Village" QuestId="9139" Type="KillMob" MobId="16326" KillCount="4" />
 			<Objective QuestName="The Plagued Coast" QuestId="9149" Type="CollectItem" ItemId="22579" CollectCount="6" />
 			<!-- Curbing the Plague - has issues -->
 
 			<TurnIn QuestName="Goldenmist Village" QuestId="9139" TurnInName="" TurnInId="16197" />
-			<TurnIn QuestName="Investigate An'daroth" QuestId="9160" TurnInName="" TurnInId="16231" />
+			<!--<TurnIn QuestName="Investigate An'daroth" QuestId="9160" TurnInName="" TurnInId="16231" />-->
 			<TurnIn QuestName="The Plagued Coast" QuestId="9149" TurnInName="" TurnInId="16198" />
 
+		<PickUp QuestName="Underlight Ore Samples" QuestId="9207" GiverName="Apprentice Shatharia" GiverId="16293" />
+			<Objective QuestName="Trouble at the Underlight Mines" QuestId="9192" Type="KillMob" MobId="16334" KillCount="8" />
+			<Objective QuestName="Trouble at the Underlight Mines" QuestId="9192" Type="KillMob" MobId="16335" KillCount="6" />
+			<Objective QuestName="Trouble at the Underlight Mines" QuestId="9192" Type="KillMob" MobId="16337" KillCount="4" />
+			<Objective QuestName="Underlight Ore Samples" QuestId="9207" Type="CollectItem" ItemId="22634" CollectCount="6" />
+		<TurnIn QuestName="Culinary Crunch" QuestId="9171" TurnInName="Master Chef Mouldier" TurnInId="16253" />
+
 			
 
-
-
-			<If Condition="HasQuest(9159) &amp;&amp; !(IsQuestCompleted(9159))" >
-				<SetGrindArea>
-					<GrindArea>
-						<Name>Curbing the Plague</Name>
-						<TargetMinLevel>1</TargetMinLevel>
-						<TargetMaxLevel>86</TargetMaxLevel>
-						<Factions>411 22</Factions>
-						<Hotspots>
-							<Hotspot X="7499.138" Y="-6215.389" Z="11.87804" />
-							<Hotspot X="7396.855" Y="-5987.515" Z="14.52595" />
-							<Hotspot X="7229.082" Y="-6100.099" Z="14.40891" />
-						</Hotspots>
-					</GrindArea>
-				</SetGrindArea>
-				<GrindTo Condition="IsQuestCompleted(9159)" />
+		<PickUp QuestName="Spinal Dust" QuestId="9218" GiverName="Magistrix Aminel" GiverId="16205" />
+		<PickUp QuestName="Rotting Hearts" QuestId="9216" GiverName="Magistrix Aminel" GiverId="16205" />
+		<TurnIn QuestName="Tomber's Supplies" QuestId="9152" TurnInName="Rathis Tomber" TurnInId="16224" />
+		<TurnIn QuestName="Goldenmist Village" QuestId="9139" TurnInName="Arcanist Vandril" TurnInId="16197" />
+		<PickUp QuestName="Windrunner Village" QuestId="9140" GiverName="Arcanist Vandril" GiverId="16197" />
+		<TurnIn QuestName="Salvaging the Past" QuestId="9150" TurnInName="Magister Darenis" TurnInId="16199" />
+		<TurnIn QuestName="Investigate An'daroth" QuestId="9160" TurnInName="Dame Auriferous" TurnInId="16231" />
+		<PickUp QuestName="Into Occupied Territory" QuestId="9163" GiverName="Dame Auriferous" GiverId="16231" />
+		<TurnIn QuestName="Trouble at the Underlight Mines" QuestId="9192" TurnInName="Deathstalker Maltendis" TurnInId="16251" />
+		<PickUp QuestName="Retaking Windrunner Spire" QuestId="9173" GiverName="High Executor Mavren" GiverId="16252" />
+		<TurnIn QuestName="Down the Dead Scar" QuestId="9155" TurnInName="Deathstalker Rathiel" TurnInId="16200" />
+		<TurnIn QuestName="The Plagued Coast" QuestId="9149" TurnInName="Apothecary Renzithen" TurnInId="16198" />
+			<Objective QuestName="Into Occupied Territory" QuestId="9163" Type="CollectItem" ItemId="22590" CollectCount="1" />
+			<Objective QuestName="Into Occupied Territory" QuestId="9163" Type="CollectItem" ItemId="22591" CollectCount="1" />
+			<Objective QuestName="Into Occupied Territory" QuestId="9163" Type="CollectItem" ItemId="22592" CollectCount="1" />
+			<Objective QuestName="Windrunner Village" QuestId="9140" Type="CollectItem" ItemId="22566" CollectCount="6" />
+			<Objective QuestName="Windrunner Village" QuestId="9140" Type="CollectItem" ItemId="22567" CollectCount="4" />
+			<Objective QuestName="Retaking Windrunner Spire" QuestId="9173" Type="KillMob" MobId="16315" KillCount="8" />
+			<Objective QuestName="Retaking Windrunner Spire" QuestId="9173" Type="KillMob" MobId="16314" KillCount="10" />
+		
+		
+		
+				<If Condition="(HasItem(22597))" >
+			<PickUp QuestName="The Lady's Necklace" QuestId="9175" GiverName="The Lady's Necklace" GiverId="22597" GiverType="Item" />
+		</If>
+		<PickUp QuestName="The Sanctum of the Sun" QuestId="9151" GiverName="Magister Darenis" GiverId="16199" />
+		<TurnIn QuestName="Retaking Windrunner Spire" QuestId="9173" TurnInName="High Executor Mavren" TurnInId="16252" />
+		<TurnIn QuestName="Into Occupied Territory" QuestId="9163" TurnInName="Dame Auriferous" TurnInId="16231" />
+		<TurnIn QuestName="The Lady's Necklace" QuestId="9175" TurnInName="High Executor Mavren" TurnInId="16252" />
+		<If Condition="Me.Race == WoWRace.BloodElf" >
+			<PickUp QuestName="Journey to Undercity" QuestId="9180" GiverName="High Executor Mavren" GiverId="16252" />
+		</If>	
+		<TurnIn QuestName="Windrunner Village" QuestId="9140" TurnInName="Arcanist Vandril" TurnInId="16197" />
+		<PickUp QuestName="Deliver the Plans to An'telas" QuestId="9166" GiverName="Darne Auriferous" GiverId="16231" />
+		<PickUp QuestName="Troll Juju" QuestId="9199" GiverName="Deathstalker Maltendis" GiverId="16251" />
+		<PickUp QuestName="Investigate the Amani Catacombs" QuestId="9193" GiverName="Advisor Valwyn" GiverId="16289" />
+		<PickUp QuestName="The Farstrider Enclave" QuestId="9282" GiverName="Magister Kaendris" GiverId="16239" />
+		<TurnIn QuestName="Underlight Ore Samples" QuestId="9207" TurnInName="Magister Quallestis" TurnInId="16291" />
+		<TurnIn QuestName="The Sanctum of the Sun" QuestId="9151" TurnInName="Magister Idonis" TurnInId="16204" />
+		<TurnIn QuestName="Deliver the Plans to An'telas" QuestId="9166" TurnInName="Magister Sylastor" TurnInId="16237" />
+		<PickUp QuestName="Deactivate An'owyn" QuestId="9169" GiverName="Magister Sylastor" GiverId="16237" />
+		<TurnIn QuestName="Curbing the Plague" QuestId="9159" TurnInName="Farstrider Sedina" TurnInId="16202" />
+		<PickUp QuestName="Attack on Zeb'Tela" QuestId="9276" GiverName="Farstrider Solanna" GiverId="16463" />
+		<PickUp QuestName="Shadowpine Weaponry" QuestId="9214" GiverName="Capatin Helios" GiverId="16220" />
+		<PickUp QuestName="A Little Dash of Seasoning" QuestId="9275" GiverName="Apothecary Venustus" GiverId="16464" />
+		<TurnIn QuestName="The Farstrider Enclave" QuestId="9282" TurnInName="Ranger Vynna" TurnInId="16203" />
+		<PickUp QuestName="The Traitor's Shadow" QuestId="9161" GiverName="Ranger Vynna" GiverId="16203" />
+		<TurnIn QuestName="The Traitor's Shadow" QuestId="9161" TurnInName="Dusty Journal" TurnInId="181150" />
+		<PickUp QuestName="Hints of the Past" QuestId="9162" GiverType="Object" GiverId="181150" X="7880.121" Y="-7911.136" Z="182.8044" />
+			<Objective QuestName="Attack on Zeb'Tela" QuestId="9276" Type="KillMob" MobId="16469" KillCount="8" />
+			<Objective QuestName="Attack on Zeb'Tela" QuestId="9276" Type="KillMob" MobId="16344" KillCount="8" />
+			<Objective QuestName="Shadowpine Weaponry" QuestId="9214" Type="CollectItem" ItemId="23165" CollectCount="3" />
+			<Objective QuestName="Shadowpine Weaponry" QuestId="9214" Type="CollectItem" ItemId="23167" CollectCount="3" />
+		<TurnIn QuestName="Attack on Zeb'Tela" QuestId="9276" TurnInName="Farstrider Solanna" TurnInId="16463" />
+		<PickUp QuestName="Assault on Zeb'Nowa" QuestId="9277" GiverName="Farstrider Solanna" GiverId="16463" />
+		<TurnIn QuestName="Hints of the Past" QuestId="9162" TurnInName="Ranger Vynna" TurnInId="16203" />
+		<PickUp QuestName="Report to Magister Kaendris" QuestId="9172" GiverName="Ranger Vynna" GiverId="16203" />
+			<!-- Investigate the Amani Catacombs -->
+			<Objective QuestName="Investigate the Amani Catacombs" QuestId="9193" Type="UseObject" ObjectId="181148" UseCount="10" />
+			<RunTo QuestId="9193" X="7550.547" Y="-7360.144" Z="162.6712" />
+			<Objective QuestName="Troll Juju" QuestId="9199" Type="CollectItem" ItemId="22633" CollectCount="8" />
+		<PickUp QuestName="Escape from the Catacombs" QuestId="9212" GiverName="Ranger Lilatha" GiverId="16295" />
+			<!-- Escape from the Catacombs -->
+			<While Condition="HasQuest(9212) &amp;&amp; !IsQuestCompleted(9212)" >
+				<CustomBehavior File="Escort" QuestId="9212" MobId="16295" X="7550.547" Y="-7360.144" Z="162.6712" />
+				<If Condition="HasQuest(9212) &amp;&amp; !IsQuestCompleted(9212)" >
+					<RunTo X="7550.547" Y="-7360.144" Z="162.6712" />
+					<CustomBehavior File="AbandonQuest" QuestId="9212" Type="Failed" />
+					<CustomBehavior File="WaitTimer" WaitTime="15000" />
+					<PickUp QuestName="Escape from the Catacombs" QuestId="9212" GiverName="Ranger Lilatha" GiverId="16295" />
+				</If>
+			</While>	
+		<TurnIn QuestName="Escape from the Catacombs" QuestId="9212" TurnInName="Captain Helios" TurnInId="16220" />
+			<Objective QuestName="A Little Dash of Seasoning" QuestId="9275" Type="UseObject" ObjectId="181252" UseCount="1" />
+			<Objective QuestName="A Little Dash of Seasoning" QuestId="9275" Type="UseObject" ObjectId="181250" UseCount="1" />
+			<Objective QuestName="A Little Dash of Seasoning" QuestId="9275" Type="UseObject" ObjectId="181251" UseCount="1" />
+			<Objective QuestName="Assault on Zeb'Nowa" QuestId="9277" Type="KillMob" MobId="16345" KillCount="10" />
+			<Objective QuestName="Assault on Zeb'Nowa" QuestId="9277" Type="KillMob" MobId="16346" KillCount="10" />
+			<Objective QuestName="Shadowpine Weaponry" QuestId="9214" Type="CollectItem" ItemId="22677" CollectCount="3" />
+			<Objective QuestName="Shadowpine Weaponry" QuestId="9214" Type="CollectItem" ItemId="23166" CollectCount="3" />
+			<Objective QuestName="Deactivate An'owyn" QuestId="9169" Type="CollectItem" ItemId="23191" CollectCount="1" />
+			<Objective QuestName="Deactivate An'owyn" QuestId="9169" Type="UseObject" ObjectId="181359" UseCount="1" />
+		<TurnIn QuestName="Assault on Zeb'Nowa" QuestId="9277" TurnInName="Farstrider Solanna" TurnInId="16463" />
+		<TurnIn QuestName="Shadowpine Weaponry" QuestId="9214" TurnInName="Captain Helios" TurnInId="16220" />
+		<TurnIn QuestName="A Little Dash of Seasoning" QuestId="9275" TurnInName="Apothecary Venustus" TurnInId="16464" />
+		<TurnIn QuestName="Deactivate An'owyn" QuestId="9169" TurnInName="Magister Sylastor" TurnInId="16237" />
+		<TurnIn QuestName="Report to Magister Kaendris" QuestId="9172" TurnInName="Magister Kaendris" TurnInId="16239" />
+		<PickUp QuestName="The Twin Ziggurats" QuestId="9176" GiverName="Magister Kaendris" GiverId="16239" />
+		<PickUp QuestName="War on Deatholme" QuestId="9220" GiverName="Magister Idonis" GiverId="16204" />
+		<PickUp QuestName="Clearing the Way" QuestId="9281" GiverName="Apprentice Vor'el" GiverId="16480" />
+			<Objective QuestName="Clearing the Way" QuestId="9281" Type="KillMob" MobId="16352" KillCount="10" />
+			<Objective QuestName="Clearing the Way" QuestId="9281" Type="KillMob" MobId="16349" KillCount="10" />
+		<TurnIn QuestName="Clearing the Way" QuestId="9281" TurnInName="Apprentice Vor'el" TurnInId="16480" />
+			<Objective QuestName="The Twin Ziggurats" QuestId="9176" Type="CollectItem" ItemId="22599" CollectCount="1" />
+			<Objective QuestName="The Twin Ziggurats" QuestId="9176" Type="CollectItem" ItemId="22598" CollectCount="1" />
+			<Objective QuestName="Spinal Dust" QuestId="9218" Type="CollectItem" ItemId="22642" CollectCount="10" />	
+			<Objective QuestName="Rotting Hearts" QuestId="9216" Type="CollectItem" ItemId="22641" CollectCount="10" />
+			<Objective QuestName="War on Deatholme" QuestId="9220" Type="KillMob" MobId="16320" KillCount="5" />
+			<Objective QuestName="War on Deatholme" QuestId="9220" Type="KillMob" MobId="16319" KillCount="6" />
+			<Objective QuestName="War on Deatholme" QuestId="9220" Type="KillMob" MobId="16321" KillCount="6" />
+		<TurnIn QuestName="Rotting Hearts" QuestId="9216" TurnInName="Magistrix Aminel" TurnInId="16205" />
+		<TurnIn QuestName="Spinal Dust" QuestId="9218" TurnInName="Magistrix Aminel" TurnInId="16205" />
+		<TurnIn QuestName="Troll Juju" QuestId="9199" TurnInName="Deathstalker Maltendis" TurnInId="16251" />
+		<TurnIn QuestName="Investigate the Amani Catacombs" QuestId="9193" TurnInName="Advisor Valwyn" TurnInId="16289" />
+		<TurnIn QuestName="The Twin Ziggurats" QuestId="9176" TurnInName="Magister Kaendris" TurnInId="16239" />
+		<TurnIn QuestName="War on Deatholme" QuestId="9220" TurnInName="Magister Idonis" TurnInId="16204" />
+		<PickUp QuestName="Dar'Khan's Lieutenants" QuestId="9170" GiverName="Magister Idonis" GiverId="16204" />
+		<PickUp QuestName="A Restorative Draught" QuestId="9877" GiverName="Arcanist Janeda" GiverId="16240" />
+		<TurnIn QuestName="A Restorative Draught" QuestId="9877" TurnInName="Apothecary Renzithen" TurnInId="16198" />
+		<PickUp QuestName="Captives at Deatholme" QuestId="9164" GiverName="Apothecary Renzithen" GiverId="16198" />
+			<Objective QuestName="Dar'Khan's Lieutenants" QuestId="9170" Type="KillMob" MobId="16248" KillCount="1" />
+			<!-- Apothecary Enith -->
+			<If Condition="HasQuest(9164) &amp;&amp; !IsObjectiveComplete(1, 9164)" >
+				<CustomBehavior File="InteractWith" QuestId="9164" GossipOptions="1,1" MobId="16208" WaitTime="1000" X="6639.732" Y="-6344.172" Z="8.944269" />
 			</If>
-			
+			<Objective QuestName="Dar'Khan's Lieutenants" QuestId="9170" Type="KillMob" MobId="16250" KillCount="1" />
+			<Objective QuestName="Dar'Khan's Lieutenants" QuestId="9170" Type="KillMob" MobId="16247" KillCount="1" />
+			<!-- Apprentice Varnis -->
+			<If Condition="HasQuest(9164) &amp;&amp; !IsObjectiveComplete(2, 9164)" >
+				<CustomBehavior File="InteractWith" QuestId="9164" GossipOptions="1,1" MobId="16206" WaitTime="1000" X="6435.933" Y="-6635.705" Z="108.8808" />
+			</If>	
+			<Objective QuestName="Dar'Khan's Lieutenants" QuestId="9170" Type="KillMob" MobId="16249" KillCount="1" />
+			<!-- Ranger Vedoran -->
+			<If Condition="HasQuest(9164) &amp;&amp; !IsObjectiveComplete(3, 9164)" >
+				<CustomBehavior File="InteractWith" QuestId="9164" GossipOptions="1,1" MobId="16209" WaitTime="1000" X="6288.148" Y="-6365.467" Z="79.46944" />
+			</If>
+		<TurnIn QuestName="Dar'Khan's Lieutenants" QuestId="9170" TurnInName="Magister Idonis" TurnInId="16204" />
+		<TurnIn QuestName="Captives at Deatholme" QuestId="9164" TurnInName="Arcanist Janeda" TurnInId="16240" />
+		<TurnIn QuestName="Journey to Undercity" QuestId="9180" TurnInName="Lady Sylvanas Windrunner" TurnInId="10181" />
 			
 	
 	<!--	<PickUp QuestName="Package Recovery" QuestId="9705" GiverId="17849" GiverName="Slain Outrunner"/>-->
@@ -496,5 +653,248 @@
         <CustomBehavior File="LoadProfile" ProfileName="[H - Quest] Durotar 5-12 [Bladez]" RememberProfile="true" /> 
 
     </QuestOrder>
+	<ForceMail>
+    <Item Name="Linen Cloth" Entry="2589" />
+    <Item Name="Wool Cloth" Entry="2592" />
+    <Item Name="Spider's Silk" Entry="3182" />
+    <Item Name="Silk Cloth" Entry="4306" />
+    <Item Name="Thick Spider's Silk" Entry="4337" />
+    <Item Name="Mageweave Cloth" Entry="4338" />
+    <Item Name="Shadow Silk" Entry="10285" />
+    <Item Name="Felcloth" Entry="14256" />
+    <Item Name="Ironweb Spider Silk" Entry="14227" />
+    <Item Name="Runecloth" Entry="14047" />
+    <Item Name="Mooncloth" Entry="14342" />
+    <Item Name="Netherweave Cloth" Entry="21877" />
+    <Item Name="Netherweb Spider Silk" Entry="21881" />
+    <Item Name="Primal Mooncloth" Entry="21845" />
+    <Item Name="Frostweave Cloth" Entry="33470" />
+    <Item Name="Shadowcloth" Entry="24272" />
+    <Item Name="Spellcloth" Entry="24271" />
+    <Item Name="Iceweb Spider Silk" Entry="42253" />
+    <Item Name="Ebonweave" Entry="41593" />
+    <Item Name="Moonshroud" Entry="41594" />
+    <Item Name="Spellweave" Entry="41595" />
+    <Item Name="Elemental Air" Entry="7069" />
+    <Item Name="Elemental Earth" Entry="7067" />
+    <Item Name="Elemental Fire" Entry="7068" />
+    <Item Name="Elemental Water" Entry="7070" />
+    <Item Name="Breath of Wind" Entry="7081" />
+    <Item Name="Core of Earth" Entry="7075" />
+    <Item Name="Globe of Water" Entry="7079" />
+    <Item Name="Heart of Fire" Entry="7077" />
+    <Item Name="Heart of the Wild" Entry="10286" />
+    <Item Name="Ichor of Undeath" Entry="7972" />
+    <Item Name="Essence of Air" Entry="7082" />
+    <Item Name="Essence of Earth" Entry="7076" />
+    <Item Name="Essence of Fire" Entry="7078" />
+    <Item Name="Essence of Undeath" Entry="12808" />
+    <Item Name="Essence of Water" Entry="7080" />
+    <Item Name="Living Essence" Entry="12803" />
+    <Item Name="Mote of Air" Entry="22572" />
+    <Item Name="Mote of Earth" Entry="22573" />
+    <Item Name="Mote of Fire" Entry="22574" />
+    <Item Name="Mote of Life" Entry="22575" />
+    <Item Name="Mote of Mana" Entry="22576" />
+    <Item Name="Mote of Shadow" Entry="22577" />
+    <Item Name="Mote of Water" Entry="22578" />
+    <Item Name="Primal Air" Entry="22451" />
+    <Item Name="Primal Earth" Entry="22452" />
+    <Item Name="Primal Fire" Entry="21884" />
+    <Item Name="Primal Life" Entry="21886" />
+    <Item Name="Primal Mana" Entry="22457" />
+    <Item Name="Primal Shadow" Entry="22456" />
+    <Item Name="Primal Water" Entry="21885" />
+    <Item Name="Crystallized Air" Entry="37700" />
+    <Item Name="Crystallized Earth" Entry="37701" />
+    <Item Name="Crystallized Fire" Entry="37702" />
+    <Item Name="Crystallized Life" Entry="37704" />
+    <Item Name="Crystallized Shadow" Entry="37703" />
+    <Item Name="Crystallized Water" Entry="37705" />
+    <Item Name="Eternal Air" Entry="35623" />
+    <Item Name="Eternal Earth" Entry="35624" />
+    <Item Name="Eternal Fire" Entry="36860" />
+    <Item Name="Eternal Life" Entry="35625" />
+    <Item Name="Eternal Might" Entry="40248" />
+    <Item Name="Eternal Shadow" Entry="35627" />
+    <Item Name="Eternal Water" Entry="35622" />
+    <Item Name="Primal Might" Entry="23571" />
+    <Item Name="Blood Shard" Entry="5075" />
+    <Item Name="Malachite" Entry="774" />
+    <Item Name="Tigerseye" Entry="818" />
+    <Item Name="Shadowgem" Entry="1210" />
+    <Item Name="Moss Agate" Entry="1206" />
+    <Item Name="Lesser Moonstone" Entry="1705" />
+    <Item Name="Jade" Entry="1529" />
+    <Item Name="Citrine" Entry="3864" />
+    <Item Name="Aquamarine" Entry="7909" />
+    <Item Name="Black Diamond" Entry="11754" />
+    <Item Name="Blood of the Mountain" Entry="11382" />
+    <Item Name="Souldarite" Entry="19774" />
+    <Item Name="Star Ruby" Entry="7910" />
+    <Item Name="Blue Sapphire" Entry="12361" />
+    <Item Name="Large Opal" Entry="12799" />
+    <Item Name="Arcane Crystal" Entry="12363" />
+    <Item Name="Azerothian Diamond" Entry="12800" />
+    <Item Name="Huge Emerald" Entry="12364" />
+    <Item Name="Azure Moonstone" Entry="23117" />
+    <Item Name="Blood Garnet" Entry="23077" />
+    <Item Name="Deep Peridot" Entry="23079" />
+    <Item Name="Flame Spessarite" Entry="21929" />
+    <Item Name="Golden Draenite" Entry="23112" />
+    <Item Name="Shadow Draenite" Entry="23107" />
+    <Item Name="Dawnstone" Entry="23440" />
+    <Item Name="Living Ruby" Entry="23436" />
+    <Item Name="Netherwing Egg" Entry="32506" />
+    <Item Name="Nightseye" Entry="23441" />
+    <Item Name="Noble Topaz" Entry="23439" />
+    <Item Name="Star of Elune" Entry="23438" />
+    <Item Name="Talasite" Entry="23437" />
+    <Item Name="Bloodstone" Entry="36917" />
+    <Item Name="Chalcedony" Entry="36923" />
+    <Item Name="Dark Jade" Entry="36932" />
+    <Item Name="Huge Citrine" Entry="36929" />
+    <Item Name="Shadow Crystal" Entry="36926" />
+    <Item Name="Sun Crystal" Entry="36920" />
+    <Item Name="Autumn's Glow" Entry="36921" />
+    <Item Name="Forest Emerald" Entry="36933" />
+    <Item Name="Monarch Topaz" Entry="36930" />
+    <Item Name="Scarlet Ruby" Entry="36918" />
+    <Item Name="Sky Sapphire" Entry="36924" />
+    <Item Name="Twilight Opal" Entry="36927" />
+    <Item Name="Bloodthistle" Entry="22710" />
+    <Item Name="Peacebloom" Entry="2447" />
+    <Item Name="Silverleaf" Entry="765" />
+    <Item Name="Earthroot" Entry="2449" />
+    <Item Name="Mageroyal" Entry="785" />
+    <Item Name="Briarthorn" Entry="2450" />
+    <Item Name="Swiftthistle" Entry="2452" />
+    <Item Name="Bruiseweed" Entry="2453" />
+    <Item Name="Stranglekelp" Entry="3820" />
+    <Item Name="Grave Moss" Entry="3369" />
+    <Item Name="Wild Steelbloom" Entry="3355" />
+    <Item Name="Kingsblood" Entry="3356" />
+    <Item Name="Liferoot" Entry="3357" />
+    <Item Name="Fadeleaf" Entry="3818" />
+    <Item Name="Goldthorn" Entry="3821" />
+    <Item Name="Khadgar's Whisker" Entry="3358" />
+    <Item Name="Wintersbite" Entry="3819" />
+    <Item Name="Wildvine" Entry="8153" />
+    <Item Name="Firebloom" Entry="4625" />
+    <Item Name="Purple Lotus" Entry="8831" />
+    <Item Name="Arthas' Tears" Entry="8836" />
+    <Item Name="Sungrass" Entry="8838" />
+    <Item Name="Blindweed" Entry="8839" />
+    <Item Name="Ghost Mushroom" Entry="8845" />
+    <Item Name="Gromsblood" Entry="8846" />
+    <Item Name="Golden Sansam" Entry="13464" />
+    <Item Name="Dreamfoil" Entry="13463" />
+    <Item Name="Flame Cap" Entry="22788" />
+    <Item Name="Mountain Silversage" Entry="13465" />
+    <Item Name="Plaguebloom" Entry="13466" />
+    <Item Name="Icecap" Entry="13467" />
+    <Item Name="Black Lotus" Entry="13468" />
+    <Item Name="Bloodvine" Entry="19726" />
+    <Item Name="Dreaming Glory" Entry="22786" />
+    <Item Name="Felweed" Entry="22785" />
+    <Item Name="Nightmare Seed" Entry="22797" />
+    <Item Name="Terocone" Entry="22789" />
+    <Item Name="Ragveil" Entry="22787" />
+    <Item Name="Ancient Lichen" Entry="22790" />
+    <Item Name="Fel Lotus" Entry="22794" />
+    <Item Name="Mana Thistle" Entry="22793" />
+    <Item Name="Netherbloom" Entry="22791" />
+    <Item Name="Nightmare Vine" Entry="22792" />
+    <Item Name="Deadnettle" Entry="37921" />
+    <Item Name="Goldclover" Entry="36901" />
+    <Item Name="Talandra's Rose" Entry="36907" />
+    <Item Name="Tiger Lily" Entry="36904" />
+    <Item Name="Adder's Tongue" Entry="36903" />
+    <Item Name="Frost Lotus" Entry="36908" />
+    <Item Name="Icethorn" Entry="36906" />
+    <Item Name="Lichbloom" Entry="36905" />
+    <Item Name="Ruined Leather Scraps" Entry="2934" />
+    <Item Name="Light Hide" Entry="783" />
+    <Item Name="Light Leather" Entry="2318" />
+    <Item Name="Medium Hide" Entry="4232" />
+    <Item Name="Medium Leather" Entry="2319" />
+    <Item Name="Heavy Hide" Entry="4235" />
+    <Item Name="Heavy Leather" Entry="4234" />
+    <Item Name="Deeprock Salt" Entry="8150" />
+    <Item Name="Thick Hide" Entry="8169" />
+    <Item Name="Thick Leather" Entry="4304" />
+    <Item Name="Rugged Hide" Entry="8171" />
+    <Item Name="Rugged Leather" Entry="8170" />
+    <Item Name="Enchanted Leather" Entry="12810" />
+    <Item Name="Crystal Infused Leather" Entry="25699" />
+    <Item Name="Knothide Leather" Entry="21887" />
+    <Item Name="Knothide Leather Scraps" Entry="25649" />
+    <Item Name="Thick Clefthoof Leather" Entry="25708" />
+    <Item Name="Heavy Knothide Leather" Entry="23793" />
+    <Item Name="Borean Leather" Entry="33568" />
+    <Item Name="Borean Leather Scraps" Entry="33567" />
+    <Item Name="Arctic Fur" Entry="44128" />
+    <Item Name="Heavy Borean Leather" Entry="38425" />
+    <Item Name="Black Whelp Scale" Entry="7286" />
+    <Item Name="Deviate Scale" Entry="6470" />
+    <Item Name="Green Whelp Scale" Entry="7392" />
+    <Item Name="Perfect Deviate Scale" Entry="6471" />
+    <Item Name="Thin Kodo Leather" Entry="5082" />
+    <Item Name="Slimy Murloc Scale" Entry="5784" />
+    <Item Name="Raptor Hide" Entry="4461" />
+    <Item Name="Thick Murloc Scale" Entry="5785" />
+    <Item Name="Turtle Scale" Entry="8167" />
+    <Item Name="Scorpid Scale" Entry="8154" />
+    <Item Name="Worn Dragonscale" Entry="8165" />
+    <Item Name="Blue Dragonscale" Entry="15415" />
+    <Item Name="Devilsaur Leather" Entry="15417" />
+    <Item Name="Green Dragonscale" Entry="15412" />
+    <Item Name="Warbear Leather" Entry="15419" />
+    <Item Name="Black Dragonscale" Entry="15416" />
+    <Item Name="Heavy Scorpid Scale" Entry="15408" />
+    <Item Name="Heavy Silithid Carapace" Entry="20501" />
+    <Item Name="Light Silithid Carapace" Entry="20500" />
+    <Item Name="Silithid Chitin" Entry="20498" />
+    <Item Name="Refined Scale of Onyxia" Entry="17967" />
+    <Item Name="Scale of Onyxia" Entry="15410" />
+    <Item Name="Cobra Scales" Entry="29539" />
+    <Item Name="Core Leather" Entry="17012" />
+    <Item Name="Fel Scales" Entry="25700" />
+    <Item Name="Nether Dragonscales" Entry="29548" />
+    <Item Name="Primal Bat Leather" Entry="19767" />
+    <Item Name="Primal Tiger Leather" Entry="19768" />
+    <Item Name="Red Dragonscale" Entry="15414" />
+    <Item Name="Wind Scales" Entry="29547" />
+    <Item Name="Dreamscale" Entry="20381" />
+    <Item Name="Fel Hide" Entry="25707" />
+    <Item Name="Nerubian Chitin" Entry="38558" />
+    <Item Name="Icy Dragonscale" Entry="38557" />
+    <Item Name="Jormungar Scale" Entry="38561" />
+    <Item Name="Copper Ore" Entry="2770" />
+    <Item Name="Tin Ore" Entry="2771" />
+    <Item Name="Silver Ore" Entry="2775" />
+    <Item Name="Iron Ore" Entry="2772" />
+    <Item Name="Gold Ore" Entry="2776" />
+    <Item Name="Mithril Ore" Entry="3858" />
+    <Item Name="Truesilver Ore" Entry="7911" />
+    <Item Name="Thorium Ore" Entry="10620" />
+    <Item Name="Dark Iron Ore" Entry="11370" />
+    <Item Name="Fel Iron Ore" Entry="23424" />
+    <Item Name="Elementium Ore" Entry="18562" />
+    <Item Name="Adamantite Ore" Entry="23425" />
+    <Item Name="Eternium Ore" Entry="23427" />
+    <Item Name="Cobalt Ore" Entry="36909" />
+    <Item Name="Khorium Ore" Entry="23426" />
+    <Item Name="Saronite Ore" Entry="36912" />
+    <Item Name="Titanium Ore" Entry="36910" />
+    <Item Name="Incendite Ore" Entry="3340" />
+    <Item Name="Lesser Bloodstone Ore" Entry="4278" />
+    <Item Name="Nethercite Ore" Entry="32464" />
+    <Item Name="Rathban Ore" Entry="2798" />
+    <Item Name="Rough Stone" Entry="2835" />
+    <Item Name="Heavy Stone" Entry="2838" />
+    <Item Name="Solid Stone" Entry="7912" />
+    <Item Name="Dense Stone" Entry="12365" />
+  </ForceMail>
 
 </HBProfile>
