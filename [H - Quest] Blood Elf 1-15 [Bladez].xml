@@ -440,13 +440,7 @@
 		<PickUp QuestName="Goldenmist Village" QuestId="9139" GiverName="Arcanist Vandril" GiverId="16197" />
 
 
-			<!-- Tomber's Supplies -->
-			<!--<CustomBehavior File="UseGameObject" QuestId="9152" ObjectId="181133" NumOfTimes="1" X="7683.342" Y="-6391.251" Z="20.56107" />-->
-		<!--	<Objective QuestName="Investigate An'daroth" QuestId="9160" Type="KillMob" MobId="16330" KillCount="12" />-->
-		<!--	 Investigate An'daroth -->
-			<!--	 <If Condition="((HasQuest(9160)) &amp;&amp; (!IsQuestCompleted(9160)))" >-->
-			<!--		<RunTo X="7916.569" Y="-6509.529" Z="46.92893" />-->
-			<!--	 </If>-->
+
 			<Objective QuestName="Goldenmist Village" QuestId="9139" Type="KillMob" MobId="16325" KillCount="6" />
 			<Objective QuestName="Goldenmist Village" QuestId="9139" Type="KillMob" MobId="16326" KillCount="4" />
 			<Objective QuestName="The Plagued Coast" QuestId="9149" Type="CollectItem" ItemId="22579" CollectCount="6" />
@@ -456,23 +450,14 @@
 			<!--<TurnIn QuestName="Investigate An'daroth" QuestId="9160" TurnInName="" TurnInId="16231" />-->
 			<TurnIn QuestName="The Plagued Coast" QuestId="9149" TurnInName="" TurnInId="16198" />
 
-		<PickUp QuestName="Underlight Ore Samples" QuestId="9207" GiverName="Apprentice Shatharia" GiverId="16293" />
-			<Objective QuestName="Underlight Ore Samples" QuestId="9207" Type="CollectItem" ItemId="22634" CollectCount="6" />
-			<Objective QuestName="Trouble at the Underlight Mines" QuestId="9192" Type="KillMob" MobId="16334" KillCount="8" />
-			<Objective QuestName="Trouble at the Underlight Mines" QuestId="9192" Type="KillMob" MobId="16335" KillCount="6" />
-			<Objective QuestName="Trouble at the Underlight Mines" QuestId="9192" Type="KillMob" MobId="16337" KillCount="4" />
-			
-			<Objective QuestName="Underlight Ore Samples" QuestId="9207" Type="CollectItem" ItemId="22634" CollectCount="6" />
-<!--		<TurnIn QuestNl="Culinary Crunch" QuestId="9171" TurnInName="Apprentice Mirveda" TurnInId="15402" />-->
 
 			
 
-		<PickUp QuestName="Spinal Dust" QuestId="9218" GiverName="Magistrix Aminel" GiverId="16205" />
 		<PickUp QuestName="Rotting Hearts" QuestId="9216" GiverName="Magistrix Aminel" GiverId="16205" />
 		<TurnIn QuestName="Tomber's Supplies" QuestId="9152" TurnInName="Rathis Tomber" TurnInId="16224" />
 		<TurnIn QuestName="Goldenmist Village" QuestId="9139" TurnInName="Arcanist Vandril" TurnInId="16197" />
 		<PickUp QuestName="Windrunner Village" QuestId="9140" GiverName="Arcanist Vandril" GiverId="16197" />
-		<TurnIn QuestName="Salvaging the Past" QuestId="9150" TurnInName="Magister Darenis" TurnInId="16199" />
+
 		<TurnIn QuestName="Investigate An'daroth" QuestId="9160" TurnInName="Dame Auriferous" TurnInId="16231" />
 		<PickUp QuestName="Into Occupied Territory" QuestId="9163" GiverName="Dame Auriferous" GiverId="16231" />
 		<TurnIn QuestName="Trouble at the Underlight Mines" QuestId="9192" TurnInName="Deathstalker Maltendis" TurnInId="16251" />
