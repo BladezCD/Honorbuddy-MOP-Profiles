@@ -618,17 +618,7 @@
 			<TurnIn QuestName="Retaking Windrunner Spire" QuestId="9173" TurnInName="" TurnInId="16252" />
 			
 
-	<!--	<PickUp QuestName="Report to Captain Helios" QuestId="9146" GiverName="Ranger Valanna" GiverId="16219" />-->
-		<!--	<Objective QuestName="Forgotten Rituals" QuestId="9157" Type="CollectItem" ItemId="22674" CollectCount="8" />-->
-		<!--<TurnIn QuestName="Forgotten Rituals" QuestId="9157" TurnInName="Geranis Whitemorn" TurnInId="16201" />-->
-		<!--<	<Objective QuestName="Spirits of the Drowned" QuestId="9274" Type="KillMob" MobId="16327" KillCount="8" />-->
-		<!--<	<Objective QuestName="Spirits of the Drowned" QuestId="9274" Type="KillMob" MobId="16328" KillCount="8" />-->
-		<!--<	<Objective QuestName="Bearers of the Plague" QuestId="9158" Type="KillMob" MobId="16348" KillCount="10" />-->
-	<!--<	<TurnIn QuestName="Bearers of the Plague" QuestId="9158" TurnInName="Farstrider Sedina" TurnInId="16202" />-->
-	<!--<	<PickUp QuestName="Curbing the Plague" QuestId="9159" GiverName="Farstrider Sedina" GiverId="16202" />-->
-<!--		<TurnIn QuestName="Report to Captain Helios" QuestId="9146" TurnInName="Captain Helios" TurnInId="16220" />-->
-<!--		<TurnIn QuestName="Spirits of the Drowned" QuestId="9274" TurnInName="Ranger Krenn'an" TurnInId="16462" />-->
-<!--	<PickUp QuestName="Culinary Crunch" QuestId="9171" GiverName="Master Chef Mouldier" GiverId="16253" />-->
+
 
 		<PickUp QuestName="Troll Juju" QuestId="9199" GiverName="" GiverId="16251" />
 		<Objective QuestName="Troll Juju" QuestId="9199" Type="CollectItem" ItemId="22633" CollectCount="8" />
@@ -711,18 +701,7 @@
 		<PickUp QuestName="Report to Magister Kaendris" QuestId="9172" GiverName="Ranger Vynna" GiverId="16203" />
 			<!-- Investigate the Amani Catacombs -->
 
-	<!--	<PickUp QuestName="Escape from the Catacombs" QuestId="9212" GiverName="Ranger Lilatha" GiverId="16295" />-->
-			<!-- Escape from the Catacombs -->
-	<!--		<While Condition="HasQuest(9212) &amp;&amp; !IsQuestCompleted(9212)" >-->
-	<!--			<CustomBehavior File="Escort" QuestId="9212" MobId="16295" X="7550.547" Y="-7360.144" Z="162.6712" />-->
-	<!--			<If Condition="HasQuest(9212) &amp;&amp; !IsQuestCompleted(9212)" >-->
-	<!--				<RunTo X="7550.547" Y="-7360.144" Z="162.6712" />-->
-	<!--				<CustomBehavior File="AbandonQuest" QuestId="9212" Type="Failed" />-->
-	<!--				<CustomBehavior File="WaitTimer" WaitTime="15000" />-->
-	<!--				<PickUp QuestName="Escape from the Catacombs" QuestId="9212" GiverName="Ranger Lilatha" GiverId="16295" />-->
-	<!--			</If>-->
-	<!--		</While>-->	
-	<!--	<TurnIn QuestName="Escape from the Catacombs" QuestId="9212" TurnInName="Captain Helios" TurnInId="16220" />-->
+
 			<Objective QuestName="A Little Dash of Seasoning" QuestId="9275" Type="UseObject" ObjectId="181252" UseCount="1" />
 			<Objective QuestName="A Little Dash of Seasoning" QuestId="9275" Type="UseObject" ObjectId="181250" UseCount="1" />
 			<Objective QuestName="A Little Dash of Seasoning" QuestId="9275" Type="UseObject" ObjectId="181251" UseCount="1" />
