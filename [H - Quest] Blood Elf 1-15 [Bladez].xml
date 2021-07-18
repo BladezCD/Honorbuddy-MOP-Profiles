@@ -836,7 +836,11 @@
                             GetOffX="1840.225" GetOffY="-4390.912" GetOffZ="135.2337" />
 
         </If>
-
+        <If Condition="Me.HearthstoneAreaId != 5170" >
+            <!-- Set Hearth to Org -->
+            <MoveTo DestName="Innkeeper Gryshka" X="1573.266" Y="-4439.158" Z="16.05683" />
+            <CustomBehavior File="InteractWith" MobId="6929" InteractByGossipOptions="2" />
+        </If>
         <!-- does this new mex / mey work properly?  &amp;&amp; (Me.Y &lt; -4000) &amp;&amp; (Me.X &gt; 1600)
              <If Condition="(Me.MapId == 1)" >
              <CustomBehavior File="InteractWith" MobId="3310" X="1799.95" Y="-4370.14" Z="102.6434" />
