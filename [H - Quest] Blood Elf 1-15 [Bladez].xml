@@ -767,7 +767,6 @@
 		<PickUp QuestName="Dar'Khan's Lieutenants" QuestId="9170" GiverName="Magister Idonis" GiverId="16204" />
 		<PickUp QuestName="A Restorative Draught" QuestId="9877" GiverName="Arcanist Janeda" GiverId="16240" />
 		<TurnIn QuestName="A Restorative Draught" QuestId="9877" TurnInName="Apothecary Renzithen" TurnInId="16198" />
-		<PickUp QuestName="Captives at Deatholme" QuestId="9164" GiverName="Apothecary Renzithen" GiverId="16198" />
 			<Objective QuestName="Dar'Khan's Lieutenants" QuestId="9170" Type="KillMob" MobId="16248" KillCount="1" />
 			<!-- Apothecary Enith -->
 			<If Condition="HasQuest(9164) &amp;&amp; !IsObjectiveComplete(1, 9164)" >
@@ -775,10 +774,8 @@
 			</If>
 			<Objective QuestName="Dar'Khan's Lieutenants" QuestId="9170" Type="KillMob" MobId="16250" KillCount="1" />
 			<Objective QuestName="Dar'Khan's Lieutenants" QuestId="9170" Type="KillMob" MobId="16247" KillCount="1" />
-			<Objective QuestName="Dar'Khan's Lieutenants" QuestId="9170" Type="KillMob" MobId="16248" KillCount="1" 
-											X="6639.732" Y="-6344.172" Z="8.945532" />
-			<Objective QuestName="Dar'Khan's Lieutenants" QuestId="9170" Type="KillMob" MobId="16249" KillCount="1" 
-											X="6306.667" Y="-6462.636" Z="86.01163" />
+			<Objective QuestName="Dar'Khan's Lieutenants" QuestId="9170" Type="KillMob" MobId="16248" KillCount="1" />
+			<Objective QuestName="Dar'Khan's Lieutenants" QuestId="9170" Type="KillMob" MobId="16247" KillCount="1" />
 			<!-- Apprentice Varnis -->
 			<If Condition="HasQuest(9164) &amp;&amp; !IsObjectiveComplete(2, 9164)" >
 				<CustomBehavior File="InteractWith" QuestId="9164" GossipOptions="1,1" MobId="16206" WaitTime="1000" X="6435.933" Y="-6635.705" Z="108.8808" />
@@ -789,7 +786,7 @@
 				<CustomBehavior File="InteractWith" QuestId="9164" GossipOptions="1,1" MobId="16209" WaitTime="1000" X="6288.148" Y="-6365.467" Z="79.46944" />
 			</If>
 		<TurnIn QuestName="Dar'Khan's Lieutenants" QuestId="9170" TurnInName="Magister Idonis" TurnInId="16204" />
-		<TurnIn QuestName="Captives at Deatholme" QuestId="9164" TurnInName="Arcanist Janeda" TurnInId="16240" />
+
 
 	
 		<PickUp QuestName="Package Recovery" QuestId="9705" GiverId="17849" GiverName="Slain Outrunner"/>
