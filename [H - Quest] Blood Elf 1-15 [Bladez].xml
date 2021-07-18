@@ -1093,6 +1093,8 @@
 	<Item Name="Small Blue Pouch" Entry="828" />
 	<Item Name="Small Red Pouch" Entry="805" />
 	<Item Name="Small Black Pouch" Entry="5571" />
+	<Item Name="Small Green Pouch" Entry="5572" />
+	<Item Name="Small Brown Pouch" Entry="4496" />
   </ForceMail>
 
 </HBProfile>
