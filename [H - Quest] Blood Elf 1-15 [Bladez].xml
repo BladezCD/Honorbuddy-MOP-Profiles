@@ -660,9 +660,9 @@
 			<PickUp QuestName="Investigate An'daroth" QuestId="9160" GiverName="Dame Auriferous" GiverId="16231" />
 			<Objective QuestName="Investigate An'daroth" QuestId="9160" Type="KillMob" MobId="16330" KillCount="12" />
 			<!-- Investigate An'daroth -->
-			<If Condition="((HasQuest(9160)) &amp;&amp; (!IsQuestCompleted(9160)))" >
-				<RunTo X="7916.569" Y="-6509.529" Z="46.92893" />
-			</If>
+			<!-- <If Condition="((HasQuest(9160)) &amp;&amp; (!IsQuestCompleted(9160)))" >-->
+			<!-- 	<RunTo X="7916.569" Y="-6509.529" Z="46.92893" />-->
+			<!-- </If>-->
 			
 			
 			<TurnIn QuestName="Investigate An'daroth" QuestId="9160" TurnInName="" TurnInId="16231" />
