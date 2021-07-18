@@ -775,6 +775,10 @@
 			</If>
 			<Objective QuestName="Dar'Khan's Lieutenants" QuestId="9170" Type="KillMob" MobId="16250" KillCount="1" />
 			<Objective QuestName="Dar'Khan's Lieutenants" QuestId="9170" Type="KillMob" MobId="16247" KillCount="1" />
+			<Objective QuestName="Dar'Khan's Lieutenants" QuestId="9170" Type="KillMob" MobId="16248" KillCount="1" 
+											X="6639.732" Y="-6344.172" Z="8.945532" />
+			<Objective QuestName="Dar'Khan's Lieutenants" QuestId="9170" Type="KillMob" MobId="16249" KillCount="1" 
+											X="6306.667" Y="-6462.636" Z="86.01163" />
 			<!-- Apprentice Varnis -->
 			<If Condition="HasQuest(9164) &amp;&amp; !IsObjectiveComplete(2, 9164)" >
 				<CustomBehavior File="InteractWith" QuestId="9164" GossipOptions="1,1" MobId="16206" WaitTime="1000" X="6435.933" Y="-6635.705" Z="108.8808" />
@@ -790,7 +794,13 @@
 	
 		<PickUp QuestName="Package Recovery" QuestId="9705" GiverId="17849" GiverName="Slain Outrunner"/>
 		<TurnIn QuestName="Package Recovery" QuestId="9705" TurnInId="15301" TurnInName="Outrunner Alarion"/>
-
+		 <If Condition="Me.ZoneId == 1497" >
+            <!-- Undercity -->
+            <CustomBehavior File="Message" Text="Moving 2" LogColor="CornflowerBlue" />
+            <MoveTo X="2067.232" Y="286.1159" Z="97.03087" />
+        </If>
+		
+		
 		<CustomBehavior File="UserDialog" AllowBotStop="false" SoundCue="Exclamation" SoundCueInterval="15"
                         ExpiryTime="300000" ExpiryAction="InputEnabled_Continue"
                         Text="Profile complete. Click continue after you buy mount to continue to Org" />	
