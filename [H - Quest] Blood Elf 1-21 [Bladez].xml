@@ -1,7 +1,7 @@
 <HBProfile xsi:noNamespaceSchemaLocation="../../../Schemas/QuestProfileSchema.xsd"
            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <!-- Originally contributed by Kickazz006 -->
-    <Name>[H - Quest] Blood Elf 1-25 [Bladez] ($Rev: 3162 $)</Name>
+    <Name>[H - Quest] Blood Elf 1-21+ [Bladez] ($Rev: 3162 $)</Name>
 
     <MinLevel>1</MinLevel>
     <MaxLevel>95</MaxLevel>
