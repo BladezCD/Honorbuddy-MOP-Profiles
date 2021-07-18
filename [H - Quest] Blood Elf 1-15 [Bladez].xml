@@ -721,7 +721,18 @@
 		<PickUp QuestName="Report to Magister Kaendris" QuestId="9172" GiverName="Ranger Vynna" GiverId="16203" />
 			<!-- Investigate the Amani Catacombs -->
 
-
+	<!--	<PickUp QuestName="Escape from the Catacombs" QuestId="9212" GiverName="Ranger Lilatha" GiverId="16295" />-->
+			<!-- Escape from the Catacombs -->
+	<!--		<While Condition="HasQuest(9212) &amp;&amp; !IsQuestCompleted(9212)" >-->
+	<!--			<CustomBehavior File="Escort" QuestId="9212" MobId="16295" X="7550.547" Y="-7360.144" Z="162.6712" />-->
+	<!--			<If Condition="HasQuest(9212) &amp;&amp; !IsQuestCompleted(9212)" >-->
+	<!--				<RunTo X="7550.547" Y="-7360.144" Z="162.6712" />-->
+	<!--				<CustomBehavior File="AbandonQuest" QuestId="9212" Type="Failed" />-->
+	<!--				<CustomBehavior File="WaitTimer" WaitTime="15000" />-->
+	<!--				<PickUp QuestName="Escape from the Catacombs" QuestId="9212" GiverName="Ranger Lilatha" GiverId="16295" />-->
+	<!--			</If>-->
+	<!--		</While>-->	
+	<!--	<TurnIn QuestName="Escape from the Catacombs" QuestId="9212" TurnInName="Captain Helios" TurnInId="16220" />-->
 			<Objective QuestName="A Little Dash of Seasoning" QuestId="9275" Type="UseObject" ObjectId="181252" UseCount="1" />
 			<Objective QuestName="A Little Dash of Seasoning" QuestId="9275" Type="UseObject" ObjectId="181250" UseCount="1" />
 			<Objective QuestName="A Little Dash of Seasoning" QuestId="9275" Type="UseObject" ObjectId="181251" UseCount="1" />
