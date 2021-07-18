@@ -664,13 +664,6 @@
 				<RunTo X="7916.569" Y="-6509.529" Z="46.92893" />
 			</If>
 			
-			<Quest Id="9160" Name="Investigate An'daroth">
-			<Objective Type="KillMob" MobId="16330" KillCount="12">
-			<Hotspots>
-			<Hotspot X="7916.569" Y="-6509.529" Z="46.92893" />
-			</Hotspots>
-			</Objective>
-			</Quest>
 			
 			<TurnIn QuestName="Investigate An'daroth" QuestId="9160" TurnInName="" TurnInId="16231" />
 			<Objective QuestName="Into Occupied Territory" QuestId="9163" Type="CollectItem" ItemId="22590" CollectCount="1" />
