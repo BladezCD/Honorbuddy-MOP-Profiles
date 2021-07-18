@@ -652,6 +652,7 @@
 
 			<Objective QuestName="Goldenmist Village" QuestId="9139" Type="KillMob" MobId="16325" KillCount="6" />
 			<Objective QuestName="Goldenmist Village" QuestId="9139" Type="KillMob" MobId="16326" KillCount="4" />
+			<PickUp QuestName="The Plagued Coast" QuestId="9149" GiverName="Apothecary Renzithen" GiverId="16198" />
 			<Objective QuestName="The Plagued Coast" QuestId="9149" Type="CollectItem" ItemId="22579" CollectCount="6" />
 			<!-- Curbing the Plague - has issues -->
 
