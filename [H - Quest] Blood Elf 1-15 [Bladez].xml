@@ -26,7 +26,7 @@
     <AvoidMobs>
         <!--<Mob Name="Training Dummy" Id="44794"/>Blood Elf Training Dummy-->
 		<Mob Name="Knucklerot" Entry="16246" />
-		<Mob Name="Knucklerot" Entry="16245" />
+		<Mob Name="Luzran" Entry="16245" />
     </AvoidMobs>
 
 
@@ -586,23 +586,13 @@
 		<TurnIn QuestName="The Magister's Apprentice" QuestId="8888" TurnInName="" TurnInId="15924" />
 		
 		
-		<PickUp QuestName="Deactivating the Spire" QuestId="8889" GiverName="" GiverId="15924" />
+
 		<PickUp QuestName="Where's Wyllithen?" QuestId="9394" GiverName="" GiverId="15924" />
 		<TurnIn QuestName="Where's Wyllithen?" QuestId="9394" TurnInName="" TurnInId="15969" />
 		<PickUp QuestName="Cleaning up the Grounds" QuestId="8894" GiverName="" GiverId="15969" />
 		<Objective QuestName="Cleaning up the Grounds" QuestId="8894" Type="KillMob" MobId="15966" KillCount="6" />
 		<Objective QuestName="Cleaning up the Grounds" QuestId="8894" Type="KillMob" MobId="15967" KillCount="6" />
 		<TurnIn QuestName="Cleaning up the Grounds" QuestId="8894" TurnInName="" TurnInId="15969" />
-		<Objective QuestName="Deactivating the Spire" QuestId="8889" Type="UseObject" ObjectId="180916" UseCount="1" />
-		<Objective QuestName="Deactivating the Spire" QuestId="8889" Type="UseObject" ObjectId="180919" UseCount="1" />
-		<PickUp QuestName="Abandoned Investigations" QuestId="8891" GiverName="" GiverId="181011" />
-		<Objective QuestName="Deactivating the Spire" QuestId="8889" Type="UseObject" ObjectId="180920" UseCount="1" />
-		<Objective QuestName="Deactivating the Spire" QuestId="8889" Type="CollectItem" ItemId="24337" CollectCount="1" />
-		
-		<TurnIn QuestName="Deactivating the Spire" QuestId="8889" TurnInName="" TurnInId="15924" />
-		<TurnIn QuestName="Abandoned Investigations" QuestId="8891" TurnInName="" TurnInId="15951" />
-		<PickUp QuestName="Word from the Spire" QuestId="8890" GiverName="" GiverId="15924" />
-		<TurnIn QuestName="Word from the Spire" QuestId="8890" TurnInName="" TurnInId="15951" />
 
 
 		<TurnIn QuestName="The Scorched Grove" QuestId="9258" TurnInName="" TurnInId="15398" />
