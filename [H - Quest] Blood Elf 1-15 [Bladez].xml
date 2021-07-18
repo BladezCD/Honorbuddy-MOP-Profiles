@@ -760,9 +760,8 @@
 			<Objective QuestName="War on Deatholme" QuestId="9220" Type="KillMob" MobId="16319" KillCount="6" />
 			<Objective QuestName="War on Deatholme" QuestId="9220" Type="KillMob" MobId="16321" KillCount="6" />
 		<TurnIn QuestName="Rotting Hearts" QuestId="9216" TurnInName="Magistrix Aminel" TurnInId="16205" />
-		<TurnIn QuestName="Spinal Dust" QuestId="9218" TurnInName="Magistrix Aminel" TurnInId="16205" />
+
 		<TurnIn QuestName="Troll Juju" QuestId="9199" TurnInName="Deathstalker Maltendis" TurnInId="16251" />
-		<TurnIn QuestName="Investigate the Amani Catacombs" QuestId="9193" TurnInName="Advisor Valwyn" TurnInId="16289" />
 		<TurnIn QuestName="The Twin Ziggurats" QuestId="9176" TurnInName="Magister Kaendris" TurnInId="16239" />
 		<TurnIn QuestName="War on Deatholme" QuestId="9220" TurnInName="Magister Idonis" TurnInId="16204" />
 		<PickUp QuestName="Dar'Khan's Lieutenants" QuestId="9170" GiverName="Magister Idonis" GiverId="16204" />
@@ -787,26 +786,34 @@
 			</If>
 		<TurnIn QuestName="Dar'Khan's Lieutenants" QuestId="9170" TurnInName="Magister Idonis" TurnInId="16204" />
 		<TurnIn QuestName="Captives at Deatholme" QuestId="9164" TurnInName="Arcanist Janeda" TurnInId="16240" />
-		<TurnIn QuestName="Journey to Undercity" QuestId="9180" TurnInName="Lady Sylvanas Windrunner" TurnInId="10181" />
-			
+
 	
-	<!--	<PickUp QuestName="Package Recovery" QuestId="9705" GiverId="17849" GiverName="Slain Outrunner"/>-->
-    <!--    <TurnIn QuestName="Package Recovery" QuestId="9705" TurnInId="15301" TurnInName="Outrunner Alarion"/>-->
+		<PickUp QuestName="Package Recovery" QuestId="9705" GiverId="17849" GiverName="Slain Outrunner"/>
+		<TurnIn QuestName="Package Recovery" QuestId="9705" TurnInId="15301" TurnInName="Outrunner Alarion"/>
 
-   <!--     <If Condition="Me.ZoneId == 3430" >-->
+		<CustomBehavior File="UserDialog" AllowBotStop="false" SoundCue="Exclamation" SoundCueInterval="15"
+                        ExpiryTime="300000" ExpiryAction="InputEnabled_Continue"
+                        Text="Profile complete. Click continue after you buy mount to continue to Org" />	
+
+        <If Condition="HasQuest(8350)" >
+            <TurnIn QuestName="Innkeeper Delaniel" TurnInId="15433" QuestId="8350"
+                    X="9476.913" Y="-6859.21" Z="17.34275" />
+        </If>
+		
+     	  <If Condition="Me.ZoneId == 3430" >
             <!-- Eversong Woods -->
-    <!--        <CustomBehavior File="Message" Text="Running to Silvermoon CityRun Forest Run" LogColor="CornflowerBlue" />-->
-        <!--    <MoveTo X="10042.92" Y="-7001.271" Z="61.98705" />-->
-     <!--     </If>-->
+          <CustomBehavior File="Message" Text="Running to Silvermoon CityRun Forest Run" LogColor="CornflowerBlue" />
+            <MoveTo X="10042.92" Y="-7001.271" Z="61.98705" />
+         </If>
 
-      <!--  <If Condition="Me.ZoneId == 3487" >-->
+        <If Condition="Me.ZoneId == 3487" >
             <!-- Silvermoon City -->
-        <!--    <CustomBehavior File="Message" Text="Using Translocation Orb in Silvermoon City to Undercity">-->
-        <!--                    LogColor="CornflowerBlue" />-->
-        <!--    <MoveTo X="10042.92" Y="-7001.271" Z="61.98705" />-->
-         <!--   <CustomBehavior File="InteractWith" MobId="184502" X="10034.72" Y="-7000.292" Z="61.57618" /> -->
-         <!--   <CustomBehavior File="WaitTimer" WaitTime="10000" GoalText="Waiting for port {TimeRemaining}" /> -->
-      <!--   </If> -->
+		<CustomBehavior File="Message" Text="Using Translocation Orb in Silvermoon City to Undercity"
+                          LogColor="CornflowerBlue" />
+           <MoveTo X="10042.92" Y="-7001.271" Z="61.98705" />
+            <CustomBehavior File="InteractWith" MobId="184502" X="10034.72" Y="-7000.292" Z="61.57618" /> 
+            <CustomBehavior File="WaitTimer" WaitTime="10000" GoalText="Waiting for port {TimeRemaining}" /> 
+        </If> 
 
         <If Condition="Me.ZoneId == 1497" >
             <!-- Undercity -->
