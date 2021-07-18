@@ -595,7 +595,7 @@
 		<TurnIn QuestName="Cleaning up the Grounds" QuestId="8894" TurnInName="" TurnInId="15969" />
 		<Objective QuestName="Deactivating the Spire" QuestId="8889" Type="UseObject" ObjectId="180916" UseCount="1" />
 		<Objective QuestName="Deactivating the Spire" QuestId="8889" Type="UseObject" ObjectId="180919" UseCount="1" />
-<!--		<PickUp QuestName="Abandoned Investigations" QuestId="8891" GiverName="" GiverId="181011" />-->
+		<PickUp QuestName="Abandoned Investigations" QuestId="8891" GiverName="" GiverId="181011" />
 		<Objective QuestName="Deactivating the Spire" QuestId="8889" Type="UseObject" ObjectId="180920" UseCount="1" />
 		<Objective QuestName="Deactivating the Spire" QuestId="8889" Type="CollectItem" ItemId="24337" CollectCount="1" />
 		
