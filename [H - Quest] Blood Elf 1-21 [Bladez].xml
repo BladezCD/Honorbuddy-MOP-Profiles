@@ -1,7 +1,7 @@
 <HBProfile xsi:noNamespaceSchemaLocation="../../../Schemas/QuestProfileSchema.xsd"
            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <!-- Originally contributed by Kickazz006 -->
-    <Name>[H - Quest] Blood Elf 1-21+ [Bladez] ($Rev: 3162 $)</Name>
+    <Name>[H - Quest] Blood Elf 1-25 [Bladez] ($Rev: 3162 $)</Name>
 
     <MinLevel>1</MinLevel>
     <MaxLevel>95</MaxLevel>
@@ -612,12 +612,18 @@
 			<TurnIn QuestName="Anok'suten" QuestId="9315" TurnInName="" TurnInId="16197" />
 			<TurnIn QuestName="Suncrown Village" QuestId="9138" TurnInName="" TurnInId="16197" />
 			
+			<PickUp QuestName="Retaking Windrunner Spire" QuestId="9173" GiverName="" GiverId="16252" />
+			<Objective QuestName="Retaking Windrunner Spire" QuestId="9173" Type="KillMob" MobId="16315" KillCount="8" />
+			<Objective QuestName="Retaking Windrunner Spire" QuestId="9173" Type="KillMob" MobId="16314" KillCount="10" />
+			<TurnIn QuestName="Retaking Windrunner Spire" QuestId="9173" TurnInName="" TurnInId="16252" />
+			
 
 
 
 		<PickUp QuestName="Troll Juju" QuestId="9199" GiverName="" GiverId="16251" />
 		<Objective QuestName="Troll Juju" QuestId="9199" Type="CollectItem" ItemId="22633" CollectCount="8" />
 		<TurnIn QuestName="Troll Juju" QuestId="9199" TurnInName="" TurnInId="16251" />
+
 
 
 		<PickUp QuestName="Goldenmist Village" QuestId="9139" GiverName="Arcanist Vandril" GiverId="16197" />
@@ -637,10 +643,7 @@
 			<If Condition="HasQuest(9160) &amp;&amp; !IsQuestCompleted(9160)" >
 				<RunTo X="7916.569" Y="-6509.529" Z="46.92893" />
 			</If>
-			<PickUp QuestName="Retaking Windrunner Spire" QuestId="9173" GiverName="" GiverId="16252" />
-			<Objective QuestName="Retaking Windrunner Spire" QuestId="9173" Type="KillMob" MobId="16315" KillCount="8" />
-			<Objective QuestName="Retaking Windrunner Spire" QuestId="9173" Type="KillMob" MobId="16314" KillCount="10" />
-			<TurnIn QuestName="Retaking Windrunner Spire" QuestId="9173" TurnInName="" TurnInId="16252" />
+			
 			
 			<TurnIn QuestName="Investigate An'daroth" QuestId="9160" TurnInName="" TurnInId="16231" />
 			<TurnIn QuestName="The Plagued Coast" QuestId="9149" TurnInName="Apothecary Renzithen" TurnInId="16198" />
