@@ -1,7 +1,7 @@
 <HBProfile xsi:noNamespaceSchemaLocation="../../../Schemas/QuestProfileSchema.xsd"
            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <!-- Originally contributed by Kickazz006 -->
-    <Name>[H - Quest] Blood Elf 1-25 [Bladez] ($Rev: 3162 $)</Name>
+    <Name>[H - Quest] Blood Elf 1-21+ [Bladez] ($Rev: 3162 $)</Name>
 
     <MinLevel>1</MinLevel>
     <MaxLevel>95</MaxLevel>
@@ -612,21 +612,15 @@
 			<TurnIn QuestName="Anok'suten" QuestId="9315" TurnInName="" TurnInId="16197" />
 			<TurnIn QuestName="Suncrown Village" QuestId="9138" TurnInName="" TurnInId="16197" />
 			
-			<PickUp QuestName="Retaking Windrunner Spire" QuestId="9173" GiverName="" GiverId="16252" />
-			<Objective QuestName="Retaking Windrunner Spire" QuestId="9173" Type="KillMob" MobId="16315" KillCount="8" />
-			<Objective QuestName="Retaking Windrunner Spire" QuestId="9173" Type="KillMob" MobId="16314" KillCount="10" />
-			<TurnIn QuestName="Retaking Windrunner Spire" QuestId="9173" TurnInName="" TurnInId="16252" />
-			
 
 
 
-		<PickUp QuestName="Troll Juju" QuestId="9199" GiverName="" GiverId="16251" />
-		<Objective QuestName="Troll Juju" QuestId="9199" Type="CollectItem" ItemId="22633" CollectCount="8" />
-		<TurnIn QuestName="Troll Juju" QuestId="9199" TurnInName="" TurnInId="16251" />
+			<PickUp QuestName="Troll Juju" QuestId="9199" GiverName="" GiverId="16251" />
+			<Objective QuestName="Troll Juju" QuestId="9199" Type="CollectItem" ItemId="22633" CollectCount="8" />
+			<TurnIn QuestName="Troll Juju" QuestId="9199" TurnInName="" TurnInId="16251" />
 
 
-
-		<PickUp QuestName="Goldenmist Village" QuestId="9139" GiverName="Arcanist Vandril" GiverId="16197" />
+			<PickUp QuestName="Goldenmist Village" QuestId="9139" GiverName="Arcanist Vandril" GiverId="16197" />
 
 
 
@@ -644,13 +638,14 @@
 				<RunTo X="7916.569" Y="-6509.529" Z="46.92893" />
 			</If>
 			
-			
 			<TurnIn QuestName="Investigate An'daroth" QuestId="9160" TurnInName="" TurnInId="16231" />
 			<TurnIn QuestName="The Plagued Coast" QuestId="9149" TurnInName="Apothecary Renzithen" TurnInId="16198" />
 			<PickUp QuestName="Into Occupied Territory" QuestId="9163" GiverName="Dame Auriferous" GiverId="16231" />
 			<Objective QuestName="Into Occupied Territory" QuestId="9163" Type="CollectItem" ItemId="22590" CollectCount="1" />
 			<Objective QuestName="Into Occupied Territory" QuestId="9163" Type="CollectItem" ItemId="22591" CollectCount="1" />
 			<Objective QuestName="Into Occupied Territory" QuestId="9163" Type="CollectItem" ItemId="22592" CollectCount="1" />
+
+<!-- issue with quest, bot trying to grab before 15-->
 
 			
 
@@ -662,9 +657,13 @@
 
 			<Objective QuestName="Windrunner Village" QuestId="9140" Type="CollectItem" ItemId="22566" CollectCount="6" />
 			<Objective QuestName="Windrunner Village" QuestId="9140" Type="CollectItem" ItemId="22567" CollectCount="4" />
+			<!-- issue with quest, bot trying to grab before 15-->
 			<Objective QuestName="Retaking Windrunner Spire" QuestId="9173" Type="KillMob" MobId="16315" KillCount="8" />
 			<Objective QuestName="Retaking Windrunner Spire" QuestId="9173" Type="KillMob" MobId="16314" KillCount="10" />
-		
+			<PickUp QuestName="Retaking Windrunner Spire" QuestId="9173" GiverName="" GiverId="16252" />
+			<Objective QuestName="Retaking Windrunner Spire" QuestId="9173" Type="KillMob" MobId="16315" KillCount="8" />
+			<Objective QuestName="Retaking Windrunner Spire" QuestId="9173" Type="KillMob" MobId="16314" KillCount="10" />
+			<TurnIn QuestName="Retaking Windrunner Spire" QuestId="9173" TurnInName="" TurnInId="16252" />		
 		
 		
 	<!--	<If Condition="(HasItem(22597))" >-->
@@ -746,12 +745,12 @@
 		<PickUp QuestName="Package Recovery" QuestId="9705" GiverId="17849" GiverName="Slain Outrunner"/>
 		<TurnIn QuestName="Package Recovery" QuestId="9705" TurnInId="15301" TurnInName="Outrunner Alarion"/>
 		
-		        <If Condition="HasQuest(8350)" >
+		<If Condition="HasQuest(8350)" >
             <TurnIn QuestName="Innkeeper Delaniel" TurnInId="15433" QuestId="8350"
                     X="9476.913" Y="-6859.21" Z="17.34275" />
         </If>
 		
-     	  <If Condition="Me.ZoneId == 3430" >
+     	 <If Condition="Me.ZoneId == 3430" >
             <!-- Eversong Woods -->
           <CustomBehavior File="Message" Text="Running to Silvermoon CityRun Forest Run 1" LogColor="CornflowerBlue" />
          <!--   <MoveTo X="10042.92" Y="-7001.271" Z="61.98705" />-->
