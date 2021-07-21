@@ -678,7 +678,6 @@
 		<PickUp QuestName="The Farstrider Enclave" QuestId="9282" GiverName="Magister Kaendris" GiverId="16239" />
 		<TurnIn QuestName="The Sanctum of the Sun" QuestId="9151" TurnInName="" TurnInId="16204" />
 		<TurnIn QuestName="Deliver the Plans to An'telas" QuestId="9166" TurnInName="Magister Sylastor" TurnInId="16237" />
-		<PickUp QuestName="Deactivate An'owyn" QuestId="9169" GiverName="Magister Sylastor" GiverId="16237" />
 		
 		<PickUp QuestName="Attack on Zeb'Tela" QuestId="9276" GiverName="Farstrider Solanna" GiverId="16463" />
 		<PickUp QuestName="Shadowpine Weaponry" QuestId="9214" GiverName="Capatin Helios" GiverId="16220" />
@@ -709,7 +708,6 @@
 		<TurnIn QuestName="Assault on Zeb'Nowa" QuestId="9277" TurnInName="Farstrider Solanna" TurnInId="16463" />
 		<TurnIn QuestName="Shadowpine Weaponry" QuestId="9214" TurnInName="Captain Helios" TurnInId="16220" />
 		<TurnIn QuestName="A Little Dash of Seasoning" QuestId="9275" TurnInName="Apothecary Venustus" TurnInId="16464" />
-		<TurnIn QuestName="Deactivate An'owyn" QuestId="9169" TurnInName="Magister Sylastor" TurnInId="16237" />
 		<TurnIn QuestName="Report to Magister Kaendris" QuestId="9172" TurnInName="Magister Kaendris" TurnInId="16239" />
 		<PickUp QuestName="The Twin Ziggurats" QuestId="9176" GiverName="Magister Kaendris" GiverId="16239" />
 		<PickUp QuestName="War on Deatholme" QuestId="9220" GiverName="Magister Idonis" GiverId="16204" />
